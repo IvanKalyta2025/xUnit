@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace xUnit.XUNIT
 {
-    public class IStorable
+    public interface IStorable<T>
     {
-        
+        int Count { get; }
+
+        T Value { get; }
     }
 }
