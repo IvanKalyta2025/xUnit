@@ -8,7 +8,7 @@ namespace xUnit.XUNIT
     public interface IStorable<T>
     {
         int Count { get; }
-
-        T Value { get; }
+        void Add(T item);
+        T GetAt(int index);
     }
 }
