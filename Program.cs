@@ -24,6 +24,15 @@ class Program
         Console.WriteLine("After Sorting:");
         var allItems = container.GetAll();
         Console.WriteLine(allItems);
+
+        container.RemoveAt(0); // Remove the first item (which is the largest after sorting)
+        Console.WriteLine("After Removing First Item:");
+
+        allItems = container.GetAll();
+        Console.WriteLine(allItems);
+
+        container.Clear(); // Clear all items
+        Console.WriteLine("After Clearing, Count: " + container.Count);
     }
 }
 
