@@ -7,16 +7,18 @@ namespace xUnit.XUNIT
 
     public class Container<T> : IStorable<T>
     {
-        public int Count => throw new NotImplementedException();
+        private readonly List<T> _items = new();
+
+        public int Count => _items.Count;
 
         public void Add(T item)
         {
-            throw new NotImplementedException();
+            _items.Add(item);
         }
 
         public T GetAt(int index)
         {
-            throw new NotImplementedException();
+            return _items[index];
         }
     }
 }
