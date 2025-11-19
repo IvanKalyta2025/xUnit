@@ -12,7 +12,7 @@ namespace xUnit.XUNIT
         T GetAt(int index);
 
         void Clear();
-        IEnumerable<T> GetAll();
+        List<T> GetAll();
         void RemoveAt(int index);
         void Sort(Comparison<T> comparison);
 

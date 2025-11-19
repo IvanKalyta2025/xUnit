@@ -24,7 +24,7 @@ namespace xUnit.XUNIT
         {
             _items.Clear();
         }
-        public IEnumerable<T> GetAll()
+        public List<T> GetAll()
         {
             return _items;
         }
