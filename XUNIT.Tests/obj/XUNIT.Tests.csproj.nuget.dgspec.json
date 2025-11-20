@@ -4,14 +4,14 @@
     "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj": {}
   },
   "projects": {
-    "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj": {
+    "/Users/ivan/Desktop/xUnit/xUnit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj",
-        "projectName": "XUNIT.Tests",
-        "projectPath": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj",
+        "projectUniqueName": "/Users/ivan/Desktop/xUnit/xUnit.csproj",
+        "projectName": "xUnit",
+        "projectPath": "/Users/ivan/Desktop/xUnit/xUnit.csproj",
         "packagesPath": "/Users/ivan/.nuget/packages/",
-        "outputPath": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/obj/",
+        "outputPath": "/Users/ivan/Desktop/xUnit/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ivan/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,69 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj",
+        "projectName": "XUNIT.Tests",
+        "projectPath": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/XUNIT.Tests.csproj",
+        "packagesPath": "/Users/ivan/.nuget/packages/",
+        "outputPath": "/Users/ivan/Desktop/xUnit/XUNIT.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ivan/Desktop/xUnit/xUnit.csproj": {
+                "projectPath": "/Users/ivan/Desktop/xUnit/xUnit.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -53,6 +116,14 @@
               "version": "[6.0.2, )"
             },
             "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.core": {
               "target": "Package",
               "version": "[2.9.2, )"
             },

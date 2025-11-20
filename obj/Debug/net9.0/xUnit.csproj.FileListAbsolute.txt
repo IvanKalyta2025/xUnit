@@ -1,0 +1,15 @@
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/XUNIT.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/XUNIT.AssemblyInfoInputs.cache
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/XUNIT.AssemblyInfo.cs
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/XUNIT.csproj.CoreCompileInputs.cache
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/XUNIT.sourcelink.json
+/Users/ivan/Desktop/xUnit/bin/Debug/net9.0/xUnit
+/Users/ivan/Desktop/xUnit/bin/Debug/net9.0/xUnit.deps.json
+/Users/ivan/Desktop/xUnit/bin/Debug/net9.0/xUnit.runtimeconfig.json
+/Users/ivan/Desktop/xUnit/bin/Debug/net9.0/xUnit.dll
+/Users/ivan/Desktop/xUnit/bin/Debug/net9.0/xUnit.pdb
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/xUnit.dll
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/refint/xUnit.dll
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/xUnit.pdb
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/xUnit.genruntimeconfig.cache
+/Users/ivan/Desktop/xUnit/obj/Debug/net9.0/ref/xUnit.dll

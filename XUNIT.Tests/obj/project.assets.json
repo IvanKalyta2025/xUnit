@@ -316,14 +316,6 @@
           }
         }
       },
-      "xunit/2.9.2": {
-        "type": "package",
-        "dependencies": {
-          "xunit.analyzers": "1.16.0",
-          "xunit.assert": "2.9.2",
-          "xunit.core": "[2.9.2]"
-        }
-      },
       "xunit.abstractions/2.0.3": {
         "type": "package",
         "compile": {
@@ -336,9 +328,6 @@
             "related": ".xml"
           }
         }
-      },
-      "xunit.analyzers/1.16.0": {
-        "type": "package"
       },
       "xunit.assert/2.9.2": {
         "type": "package",
@@ -410,6 +399,16 @@
         },
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
+        }
+      },
+      "xUnit/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/xUnit.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/xUnit.dll": {}
         }
       }
     }
@@ -789,19 +788,6 @@
         "version.txt"
       ]
     },
-    "xunit/2.9.2": {
-      "sha512": "7LhFS2N9Z6Xgg8aE5lY95cneYivRMfRI8v+4PATa4S64D5Z/Plkg0qa8dTRHSiGRgVZ/CL2gEfJDE5AUhOX+2Q==",
-      "type": "package",
-      "path": "xunit/2.9.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "xunit.2.9.2.nupkg.sha512",
-        "xunit.nuspec"
-      ]
-    },
     "xunit.abstractions/2.0.3": {
       "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
       "type": "package",
@@ -817,24 +803,6 @@
         "lib/netstandard2.0/xunit.abstractions.xml",
         "xunit.abstractions.2.0.3.nupkg.sha512",
         "xunit.abstractions.nuspec"
-      ]
-    },
-    "xunit.analyzers/1.16.0": {
-      "sha512": "hptYM7vGr46GUIgZt21YHO4rfuBAQS2eINbFo16CV/Dqq+24Tp+P5gDCACu1AbFfW4Sp/WRfDPSK8fmUUb8s0Q==",
-      "type": "package",
-      "path": "xunit.analyzers/1.16.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_content/README.md",
-        "_content/logo-128-transparent.png",
-        "analyzers/dotnet/cs/xunit.analyzers.dll",
-        "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
-        "tools/install.ps1",
-        "tools/uninstall.ps1",
-        "xunit.analyzers.1.16.0.nupkg.sha512",
-        "xunit.analyzers.nuspec"
       ]
     },
     "xunit.assert/2.9.2": {
@@ -932,6 +900,11 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "xUnit/1.0.0": {
+      "type": "project",
+      "path": "../xUnit.csproj",
+      "msbuildProject": "../xUnit.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -939,6 +912,8 @@
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
+      "xunit.assert >= 2.9.2",
+      "xunit.core >= 2.9.2",
       "xunit.runner.visualstudio >= 2.8.2"
     ]
   },
@@ -966,7 +941,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ivan/Desktop/xUnit/xUnit.csproj": {
+              "projectPath": "/Users/ivan/Desktop/xUnit/xUnit.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -997,6 +976,14 @@
             "target": "Package",
             "version": "[2.9.2, )"
           },
+          "xunit.assert": {
+            "target": "Package",
+            "version": "[2.9.2, )"
+          },
+          "xunit.core": {
+            "target": "Package",
+            "version": "[2.9.2, )"
+          },
           "xunit.runner.visualstudio": {
             "target": "Package",
             "version": "[2.8.2, )"
@@ -1021,5 +1008,13 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

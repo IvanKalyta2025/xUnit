@@ -1,8 +1,8 @@
-﻿
-using xUnit.XUNIT;
+﻿using xUnit.XUNIT;
+
+namespace xUnit.XUNIT;
 
 class Program
-
 {
     static void Main(string[] args)
     {
@@ -41,10 +41,5 @@ class Program
 
         container.Clear(); // Clear all items
         Console.WriteLine("After Clearing, Count: " + container.Count);
-
     }
 }
-
-
-
-
